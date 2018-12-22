@@ -9,11 +9,14 @@
 
 <body>
 	<!-- HEADER START -->
-<header>
+	<header>
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
-				<div class="col-lg-auto col-sm-6 logo"><img src="img/logo.png" alt=""></div>
-				<div class="col-lg-auto col-sm-6">
+				<div class="col-lg-auto col-sm-6 col-9 logo"><img src="../img/logo.png" alt=""></div>
+				<a class="main__btn__menu d-flex d-md-none flex-column col-3 col-sm-6 justify-content-around align-items-center"><span></span>
+				<span></span>
+				<span></span></a>
+				<div class="col-lg-auto col-sm-6 d-none d-md-flex">
 					<p class="desc">Художественная фотография  с ограниченным тиражом</p>
 				</div>
 				<div class="col-lg-auto col-sm-6 input__search">
@@ -29,7 +32,7 @@
 	<!-- HEADER END -->
 
 	<!-- NAV START -->
-	<nav>
+	<nav class="main__menu">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="nav flex-column flex-md-row  offset-md-0 offset-lg-2">
@@ -89,7 +92,7 @@
 				</div>
 				<div class="col-lg-9 catalog__item__card">
 					<div class="row align-items-center justify-content-center">
-						<div class="col-xl-6 col-md-5 img new"><img src="img/popular_img4.jpg"></div>
+						<div class="col-xl-6 col-md-5 img new"><img src="../img/popular_img4.jpg"></div>
 						<div class="col-xl-6 col-md-7 description">
 							<span class="articul">Артикул: 321455</span>
 							<h1>Казахстан, Алматы крупнейший мегаполис</h1>
@@ -143,7 +146,7 @@
 			<div class="col-md-4 video__block">
 				<h3>Видео о товаре</h3>
 				<div class="video__item icon-youtube-play">
-					<img src="img/video_item.jpg" alt="">
+					<img src="../img/video_item.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -152,7 +155,7 @@
 
 		<!-- reviews start -->
 		<div class="row review__item">
-			<div class="col-lg-2 col-md-3"><img src="img/user.png"></div>
+			<div class="col-lg-2 col-md-3"><img src="../img/user.png"></div>
 			<div class="col-lg-10 col-md-9 review__item--desc">
 				<div class="d-flex justify-content-between">
 					<span class="review__item--name icon-quote">Максим Аврамов</span>
@@ -245,7 +248,7 @@
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-3 col-md-6 logo">
-					<img src="img/logo.png" alt="">
+					<img src="../img/logo.png" alt="">
 				</div>
 				<div class="col-lg-3 col-md-6 desc">
 					<p>Воспроизводимые на данном сайте торговые марки используются с разрешения правообладателя.</p>
@@ -272,7 +275,7 @@
 	</footer>
 	<!-- FOOTER END -->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>

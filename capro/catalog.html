@@ -12,8 +12,11 @@
 	<header>
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
-				<div class="col-lg-auto col-sm-6 logo"><img src="img/logo.png" alt=""></div>
-				<div class="col-lg-auto col-sm-6">
+				<div class="col-lg-auto col-sm-6 col-9 logo"><img src="../img/logo.png" alt=""></div>
+				<a class="main__btn__menu d-flex d-md-none flex-column col-3 col-sm-6 justify-content-around align-items-center"><span></span>
+				<span></span>
+				<span></span></a>
+				<div class="col-lg-auto col-sm-6 d-none d-md-flex">
 					<p class="desc">Художественная фотография  с ограниченным тиражом</p>
 				</div>
 				<div class="col-lg-auto col-sm-6 input__search">
@@ -29,7 +32,7 @@
 	<!-- HEADER END -->
 
 	<!-- NAV START -->
-	<nav>
+	<nav class="main__menu">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="nav flex-column flex-md-row  offset-md-0 offset-lg-2">
@@ -76,7 +79,7 @@
 
 	<!-- BREADCRUMB END -->
 
-<!-- MAIN CACTALOG START -->
+	<!-- MAIN CACTALOG START -->
 	<div class="container catalog">
 		<div class="row justify-content-between">
 			<!-- FILTER START -->
@@ -84,25 +87,36 @@
 
 				<!-- filter menu start -->
 				<ul class="menu flex-column">
-					<li class="menu-item active">
+					<li class="menu-item">
 						<a class="flex-sm-fill text-sm-center menu-link" href="#">Казахстан</a>
-						<span class="toggle">-</span>
-						<ul class="submenu">
-							<li><a class="submenu-link" href="#">Алматы</a></li>
-							<li><a class="submenu-link" href="#">Астана</a></li>
-							<li><a class="submenu-link" href="#">Южный Казахстан</a></li>
-							<li><a class="submenu-link" href="#">Северный</a></li>
-							<li><a class="submenu-link" href="#">Западный</a></li>
-							<li><a class="submenu-link" href="#">Восточный</a></li>
-							<li><a class="submenu-link" href="#">Центральный</a></li>
-						</ul>
+						<span class="toggle">+</span>
 					</li>
+					<ul class="submenu">
+						<li><a class="submenu-link" href="#">Алматы</a></li>
+						<li><a class="submenu-link" href="#">Астана</a></li>
+						<li><a class="submenu-link" href="#">Южный Казахстан</a></li>
+						<li><a class="submenu-link" href="#">Северный</a></li>
+						<li><a class="submenu-link" href="#">Западный</a></li>
+						<li><a class="submenu-link" href="#">Восточный</a></li>
+						<li><a class="submenu-link" href="#">Центральный</a></li>
+					</ul>
 					<li class="menu-item">
 						<a class="flex-sm-fill text-sm-center menu-link" href="#">Природа</a><span class="toggle">+</span>
 					</li>
+					<ul class="submenu">
+						<li><a class="submenu-link" href="#">Алматы</a></li>
+						<li><a class="submenu-link" href="#">Астана</a></li>
+						<li><a class="submenu-link" href="#">Южный Казахстан</a></li>
+					</ul>
 					<li class="menu-item">
 						<a class="flex-sm-fill text-sm-center menu-link" href="#">Арт-принты</a><span class="toggle">+</span>
 					</li>
+					<ul class="submenu">
+						<li><a class="submenu-link" href="#">Северный</a></li>
+						<li><a class="submenu-link" href="#">Западный</a></li>
+						<li><a class="submenu-link" href="#">Восточный</a></li>
+						<li><a class="submenu-link" href="#">Центральный</a></li>
+					</ul>
 				</ul>
 				<!-- filter menu end -->
 
@@ -112,11 +126,31 @@
 					<span class="price col-12">Цена (руб.)</span>
 					<input class="col-6 price__from" placeholder="от">
 					<input class="col-6 price__to" placeholder="до">
-					<!-- <input type="range" multiple min="10" max="250" step="1" /> -->
 					<ul class="col-12">
-						<li><a href="#">Производитель<span class="icon-down-open-mini"></span></a></li>
-						<li><a href="#">Цвет<span class="icon-down-open-mini"></span></a></li>
-						<li><a href="#">Коллекция<span class="icon-down-open-mini"></span></a></li>
+						<li class="filter__price--item"><a href="#">Производитель<span class="icon-down-open-mini"></span></a>
+							<ul class="submenu">
+								<li><a class="submenu-link" href="#">Производитель 1</a></li>
+								<li><a class="submenu-link" href="#">Производитель 2</a></li>
+								<li><a class="submenu-link" href="#">Производитель 3</a></li>
+								<li><a class="submenu-link" href="#">Производитель 4</a></li>
+							</ul>
+						</li>
+						<li class="filter__price--item"><a href="#">Цвет<span class="icon-down-open-mini"></span></a>
+							<ul class="submenu">
+								<li><a class="submenu-link" href="#">Цвет 1</a></li>
+								<li><a class="submenu-link" href="#">Цвет 2</a></li>
+								<li><a class="submenu-link" href="#">Цвет 3</a></li>
+								<li><a class="submenu-link" href="#">Цвет 4</a></li>
+							</ul>
+						</li>
+						<li class="filter__price--item"><a href="#">Коллекция<span class="icon-down-open-mini"></span></a>
+							<ul class="submenu">
+								<li><a class="submenu-link" href="#">Коллекция 1</a></li>
+								<li><a class="submenu-link" href="#">Коллекция 2</a></li>
+								<li><a class="submenu-link" href="#">Коллекция 3</a></li>
+								<li><a class="submenu-link" href="#">Коллекция 4</a></li>
+							</ul>
+						</li>
 					</ul>
 					<a href="#" class="col-12 btn__result">Показать варианты</a>
 					<a href="#" class="col-12 btn__result">Сбросить фильтры</a>
@@ -133,7 +167,7 @@
 					<h2 class="col-12">Казахстан</h2>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img2.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img2.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -144,7 +178,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img3.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img3.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -155,7 +189,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img new"><img src="img/popular_img4.jpg" alt=""></div>
+						<div class="img new"><img src="../img/popular_img4.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -166,7 +200,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img2.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img2.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -177,7 +211,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img3.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img3.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -188,7 +222,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img new"><img src="img/popular_img4.jpg" alt=""></div>
+						<div class="img new"><img src="../img/popular_img4.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -199,7 +233,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img2.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img2.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -210,7 +244,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img"><img src="img/popular_img3.jpg" alt=""></div>
+						<div class="img"><img src="../img/popular_img3.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -221,7 +255,7 @@
 					</div>
 
 					<div class="popular__slider__item col-xl-4 col-lg-6">
-						<div class="img new"><img src="img/popular_img4.jpg" alt=""></div>
+						<div class="img new"><img src="../img/popular_img4.jpg" alt=""></div>
 						<strong>Казахстан</strong>
 						<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
 						<div class="btn__group d-flex align-items-center justify-content-between">
@@ -258,7 +292,7 @@
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-3 col-md-6 logo">
-					<img src="img/logo.png" alt="">
+					<img src="../img/logo.png" alt="">
 				</div>
 				<div class="col-lg-3 col-md-6 desc">
 					<p>Воспроизводимые на данном сайте торговые марки используются с разрешения правообладателя.</p>
@@ -285,7 +319,7 @@
 	</footer>
 	<!-- FOOTER END -->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
