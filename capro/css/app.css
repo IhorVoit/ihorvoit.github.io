@@ -154,6 +154,7 @@ section {
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
@@ -11301,7 +11302,7 @@ a:hover {
     position: absolute;
     z-index: 150;
     background-color: #020202;
-    right: 15px;
+    left: 15px;
     top: 15px;
     -webkit-transition: .4s;
     -o-transition: .4s;
@@ -11759,7 +11760,7 @@ nav {
 .popular {
     margin-top: 45px;
     margin-bottom: 65px;
-    position: relative
+    position: relative;
 }
 
 .popular:before {
@@ -11769,7 +11770,7 @@ nav {
     width: 97.6%;
     height: 1px;
     top: 10px;
-    background-color: #e4e4e9
+    background-color: #e4e4e9;
 }
 
 .popular h2 {
@@ -11779,7 +11780,7 @@ nav {
     line-height: 18px;
     background-color: #fff;
     color: #202020;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .popular .nav {
@@ -13202,7 +13203,6 @@ hr.bottom__line {
 
 @media (max-width:767.98px) {
     header {
-        padding-left: 30px;
         padding-top: 10px;
         padding-bottom: 10px
     }
@@ -13214,11 +13214,15 @@ hr.bottom__line {
 
     header .input__search {
         margin-bottom: 20px;
-        margin-top: 20px
+        margin-top: 20px;
+        text-align: right;
     }
-
+    header .input__search .icon-search {
+        left: 45px;
+    }
     header .logo {
-        margin-bottom: 0
+        margin-bottom: 0;
+        text-align: right;
     }
 
     nav .nav {
@@ -13232,19 +13236,19 @@ hr.bottom__line {
     nav.main__menu {
         display: none;
         max-width: 450px;
-        width: 90%;
+        width: 70%;
         border: 1px solid #ececec;
         -webkit-border-radius: 0;
         border-radius: 0;
         position: absolute;
         top: 76px;
-        right: 15px;
+        left: 15px;
         z-index: 150;
         -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, .4);
         box-shadow: 0 0 15px 2px rgba(0, 0, 0, .4)
     }
 		.popular .nav .nav-item {
-				padding: 10px 0;
+		  padding: 10px 0;
 		}
 
     .popular .nav .nav-item .nav-link {
@@ -13345,9 +13349,19 @@ hr.bottom__line {
     .review__item .hide__comment {
         margin: 10px auto
     }
+    .user__login {
+        text-align: right;
+    }
 }
 
 @media (max-width:575.98px) {
+    .popular:before {
+        display: none;
+    }
+    header .input__search .icon-search {
+        left: auto;
+        right: 180px;
+    }
     .slick-prev {
         left: 0 !important
     }
@@ -13377,13 +13391,13 @@ hr.bottom__line {
         position: relative;
     }
     .popular .nav .nav-item:before, .popular .nav .nav-item:after {
-				content: '';
-				height: 1px;
-				width: 30px;
-				background: #2a1f20;
-				position: absolute;
-				text-align: center;
-				bottom: 0;
+		content: '';
+		height: 1px;
+		width: 30px;
+		background: #2a1f20;
+		position: absolute;
+		text-align: center;
+		bottom: 0;
     }
     .popular .nav .nav-item:last-child:before, .popular .nav .nav-item:last-child:after {
     	display: none;
