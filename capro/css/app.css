@@ -3995,12 +3995,11 @@ input[type=submit].btn-block {
 .dropdown-item {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+    padding: 15px 25px;
     clear: both;
     font-weight: 400;
     color: #212529;
     text-align: inherit;
-    white-space: nowrap;
     background-color: transparent;
     border: 0
 }
@@ -11569,9 +11568,9 @@ nav {
 
 .nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 15px;
-    line-height: 55px;
+    line-height: 30px;
     position: relative;
-    padding-left: 10px
+    text-align: center;
 }
 
 .nav .nav-item .dropdown-menu .dropdown-item:after {
