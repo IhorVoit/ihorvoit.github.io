@@ -50,14 +50,6 @@ $(document).ready(function(){
   $(this).toggleClass('open');
   $('nav.main__menu').slideToggle(1200);
   });
-
-  $('nav .nav .nav-item').click(function(e) {
-      e.preventDefault();
-      $('.main__btn__menu').removeClass('open');
-      if ($(window).width()<='768') {
-      $('nav.main__menu').slideUp(200);
-    }
-    });
   
 
 });
