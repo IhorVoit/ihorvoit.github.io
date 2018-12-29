@@ -57,11 +57,11 @@ $('#cascade-slider').cascadeSlider({
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",
-        min: 1000,
-        max: 10000,
-        from: 1500,
-        to: 5000,
-        step: 50,
+        min: 5000,
+        max: 150000,
+        from: 30000,
+        to: 70000,
+        step: 100,
         grid_margin: false,
         hide_from_to: false,
         hide_min_max: true
