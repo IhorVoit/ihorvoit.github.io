@@ -60,11 +60,23 @@ $('#cascade-slider').cascadeSlider({
         min: 5000,
         max: 150000,
         from: 30000,
-        to: 70000,
+        to: 120000,
         step: 100,
         grid_margin: false,
-        hide_from_to: false,
-        hide_min_max: true
+        hide_from_to: true,
+        hide_min_max: true,
+        onChange: function(data) {
+          var result_min = data.from_pretty,
+              result_max = data.to_pretty;
+          $('.filter__price .price__from').attr('placeholder', result_min);
+          $('.filter__price .price__to').attr('placeholder', result_max);
+        },
+        onStart: function(data) {
+          var result_min = data.from_pretty,
+              result_max = data.to_pretty;
+          $('.filter__price .price__from').attr('placeholder', result_min);
+          $('.filter__price .price__to').attr('placeholder', result_max);
+        }
     });
     
 });
