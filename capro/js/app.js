@@ -94,7 +94,8 @@ function showMenu(){
 function process(v){
   var value = parseInt(document.getElementById('count').value);
   value+=v;
-  document.getElementById('count').value = value;
-  
+  if(value >= 0) {
+    document.getElementById('count').value = value;
+  }
 }
 $(window).on('load resize',showMenu);
