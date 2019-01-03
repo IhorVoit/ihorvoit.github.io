@@ -78,7 +78,10 @@ $('#cascade-slider').cascadeSlider({
           $('.filter__price .price__to').attr('placeholder', result_max);
         }
     });
-    
+
+$('.btn_minus, .btn_plus').on('click', function(e) {
+    e.preventDefault();
+  })
 });
 function showMenu(){
   if ($(window).width()>'768') {
@@ -88,4 +91,10 @@ function showMenu(){
   	$('nav.main__menu').slideUp(20);
   }
 }
-$(window).on('load',showMenu);
+function process(v){
+  var value = parseInt(document.getElementById('count').value);
+  value+=v;
+  document.getElementById('count').value = value;
+  
+}
+$(window).on('load resize',showMenu);
