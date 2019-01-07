@@ -4,12 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Главная</title> 
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+
+	<!-- preloader start -->
+
+	<div class="loader__area">
+		<div class="loader"></div>
+	</div>
+
+	<!-- preloader   end -->
 	<!-- HEADER START -->
-	<header>
+	<header class="menu_wow slideInLeft" data-wow-delay=".5s" data-wow-duration="2s">
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-auto col-sm-6 logo"><img src="img/logo.png" alt=""></div>
@@ -32,7 +41,7 @@
 	<!-- HEADER END -->
 
 	<!-- NAV START -->
-	<nav class="main__menu">
+	<nav class="main__menu menu_wow slideInRight" data-wow-delay=".5s" data-wow-duration="2s">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="nav flex-column flex-md-row  offset-md-0 offset-lg-2">
@@ -74,7 +83,7 @@
 	<!-- NAV END -->
 
 	<!-- SLIDER START -->
-	<div class="container">
+	<div class="container wow fadeIn" data-wow-delay="1s">
 		<div class="row no-gutters">
 			<div class="col-md-8 slider">
 				<div class="slider__item d-flex flex-column justify-content-center align-items-start">
@@ -122,7 +131,7 @@
 	<!-- SLIDER END -->
 
 	<!-- POPULAR PRODUCTS START -->
-	<div class="container popular">
+	<div class="container popular wow slideInUp" data-wow-offset="200">
 		<div class="row justify-content-center">
 			<div class="col-auto">
 				<h2>Популярные товары</h2>
@@ -144,7 +153,7 @@
 		</ul>
 
 		<div class="row popular__slider align-content-center justify-content-center">
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="1s">
 				<div class="img hit"><img src="img/popular_img1.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -155,7 +164,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3  wow fadeInUp" data-wow-delay="1s">
 				<div class="img"><img src="img/popular_img2.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -166,7 +175,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3  wow fadeInUp" data-wow-delay="1s">
 				<div class="img"><img src="img/popular_img3.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -177,7 +186,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3  wow fadeInUp" data-wow-delay="1s">
 				<div class="img new"><img src="img/popular_img4.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -192,7 +201,7 @@
 	<!-- POPULAR PRODUCTS END -->
 
 	<!-- LAST NEWS START -->
-	<div class="container popular">
+	<div class="container popular wow slideInUp" data-wow-offset="200">
 		<div class="row justify-content-center">
 			<div class="col-auto">
 				<h2>Последние обновления</h2>
@@ -214,7 +223,7 @@
 		</ul>
 
 		<div class="row popular__slider align-content-center justify-content-center">
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="1s">
 				<div class="img hit"><img src="img/last_img1.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -225,7 +234,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="1s">
 				<div class="img"><img src="img/last_img2.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -236,7 +245,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="1s">
 				<div class="img"><img src="img/last_img3.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -247,7 +256,7 @@
 				</div>
 			</div>
 
-			<div class="popular__slider__item col-lg-6 col-xl-3">
+			<div class="popular__slider__item col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="1s">
 				<div class="img new"><img src="img/last_img4.jpg" alt=""></div>
 				<strong>Казахстан</strong>
 				<p>Алматы крупнейший мегаполис в предгорьях Заилийского Алатау</p>
@@ -268,7 +277,7 @@
 	<!-- GALLERY START  -->
 	<div class="container gallery">
 		<div class="row no-gutters">
-			<div class="col-12 col-md-6 gallery__item">
+			<div class="col-12 col-md-6 gallery__item wow flipInX" data-wow-offset="200">
 				<img src="img/galery_img1.jpg" alt="">
 				<div class="desc d-flex flex-column justify-content-center align-items-center">
 					<span class="heading">Популярные<strong>изображения</strong></span>
@@ -276,7 +285,7 @@
 					<a href="" class="watch__btn">Просмотр</a>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 gallery__item">
+			<div class="col-12 col-md-6 gallery__item wow flipInX" data-wow-offset="200">
 				<img src="img/galery_img2.jpg" alt="">
 				<div class="desc d-flex flex-column justify-content-center align-items-center">
 					<span class="heading">Выбор<strong>материала</strong></span>
@@ -284,7 +293,7 @@
 					<a href="" class="watch__btn">Просмотр</a>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 gallery__item">
+			<div class="col-12 col-md-6 gallery__item wow flipInX" data-wow-offset="200">
 				<img src="img/galery_img3.jpg" alt="">
 				<div class="desc d-flex flex-column justify-content-center align-items-center">
 					<span class="heading">Современное<strong>искусство</strong></span>
@@ -292,7 +301,7 @@
 					<a href="" class="watch__btn">Просмотр</a>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 gallery__item">
+			<div class="col-12 col-md-6 gallery__item wow flipInX" data-wow-offset="200">
 				<img src="img/galery_img4.jpg" alt="">
 				<div class="desc d-flex flex-column justify-content-center align-items-center">
 					<span class="heading">Качественные<strong>рамы для холста</strong></span>
@@ -305,7 +314,7 @@
 	<!-- GALLERY END  -->
 
 	<!-- ARTICLE START -->
-	<div class="container article">
+	<div class="container article wow fadeIn" data-wow-duration="2s" data-wow-offset="100">
 		<div class="row">
 			<div class="col-12">
 				<h4>Решили купить картину?... </h4>
@@ -320,7 +329,7 @@
 	<!-- ARTICLE END -->
 
 	<!-- FOOTER START -->
-	<footer>
+	<footer class="wow fadeInUp">
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-3 col-md-6 logo">
@@ -330,7 +339,7 @@
 					<p>Воспроизводимые на данном сайте торговые марки используются с разрешения правообладателя.</p>
 					<p>Copyright CaPro.com  Все права защищены &copy;  2018</p>
 				</div>
-				<div class="col-lg-2 col-md-6 social d-flex flex-column justify-content-between">
+				<div class="col-lg-2 col-md-6 social d-flex flex-sm-column justify-content-sm-between">
 					<strong>В соцсетях:</strong>
 					<div class="social__btn">
 						<a href="#" class="icon-facebook"></a>
@@ -357,6 +366,7 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/cascade-slider.js"></script>
 	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
