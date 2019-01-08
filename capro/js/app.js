@@ -11,7 +11,7 @@ $('#cascade-slider').cascadeSlider({
 
   $('.our__projects span').click(function() {
   $(this).toggleClass('open');
-  $(this).nextAll().slideToggle(500);
+  $(this).nextAll().slideToggle(600);
   });
 
   $('.filter .menu-item').click(function(e) {
@@ -19,20 +19,22 @@ $('#cascade-slider').cascadeSlider({
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
       $(this).find('.toggle').html('+');
-      $(this).next('ul.submenu').slideUp(600);
+      $(this).next('ul.submenu').slideUp(700);
     }
     else {
       $(this).addClass('active');
       $(this).find('.toggle').html('-');
-      $(this).next('ul.submenu').slideDown(600);
+      $(this).next('ul.submenu').slideDown(700);
     }
   });
 
-  $('.filter__price ul .filter__price--item').click(function(e) {
+  $('.filter__price ul .filter__price--item > a').click(function(e) {
     e.preventDefault();
-    $(this).find('ul.submenu').slideToggle(600);
+    $(this).next('ul.submenu').slideToggle(600);
   });
-
+$('.filter__price ul .filter__price--item a, .filter .menu .submenu-link').click(function(e) {
+  e.preventDefault();
+});
 
   $('.main__btn__menu').click(function(e) {
   e.preventDefault();
