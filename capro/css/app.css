@@ -12195,7 +12195,9 @@ footer .subscribe__form a:hover {
   line-height: 40px;
   color: #fff
 }
-
+.certificate .all__certificate:hover {
+  background: #ed7b50;
+}
 .certificate__desc {
   font-size: 14px;
   max-height: 240px;
@@ -12392,7 +12394,6 @@ footer .subscribe__form a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 35px;
-  margin-top: 35px;
   position: relative;
   cursor: pointer
 }
@@ -12431,11 +12432,13 @@ footer .subscribe__form a:hover {
 
 .our__projects p {
   font-size: 13px;
-  line-height: 15px;
   color: #3e3e3e;
   margin: 0;
   display: none;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
 }
 
 .catalog {
@@ -12477,7 +12480,7 @@ footer .subscribe__form a:hover {
   padding: 18px 15px;
   position: relative;
   cursor: pointer;
-  z-index: 30
+  z-index: 30;
 }
 
 .filter .menu-item:hover {
@@ -12532,7 +12535,7 @@ footer .subscribe__form a:hover {
   color: #050505;
   font-size: 13px;
   line-height: 37px;
-  position: relative
+  position: relative;
 }
 
 .filter .menu .submenu-link:hover {
@@ -12551,7 +12554,10 @@ footer .subscribe__form a:hover {
 
 .filter .menu .submenu {
   padding-left: 40px;
-  display: none
+  display: none;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
 }
 
 .filter__price {
@@ -12636,7 +12642,10 @@ footer .subscribe__form a:hover {
 }
 
 .filter__price ul .filter__price--item .submenu {
-  display: none
+  display: none;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
 }
 
 .filter__price .btn__result {
@@ -13274,7 +13283,10 @@ hr.bottom__line {
     left: 15px;
     z-index: 600;
     -webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, .4);
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .4)
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .4);
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
   }
   .popular .nav .nav-item {
     padding: 10px 0;
