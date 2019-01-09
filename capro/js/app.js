@@ -71,18 +71,16 @@ $('.btn_minus, .btn_plus').on('click', function(e) {
     e.preventDefault();
   })
 // animate
-menu_wow = new WOW(
-  {
-    boxClass:     'menu_wow',      // default
-    animateClass: 'animated', // default
-    offset:       0,          // default
-    mobile:       false,       // default
-    live:         true        // default
-  }
-)
-menu_wow.init();
 
   new WOW().init();
+
+$('.nav .nav-item.dropdown').on('click', function(event) {
+  event.preventDefault();
+  $(this).toggleClass('active');
+  $(this).find('.dropdown-menu').slideToggle(500);
+  $(this).siblings().removeClass('active');
+  $(this).siblings().find('.dropdown-menu').slideUp(200);
+});
 
 });
 
