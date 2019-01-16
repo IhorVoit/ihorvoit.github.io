@@ -5,6 +5,7 @@
       arrowClass = opt.arrowClass || 'cascade-slider_arrow',
       $item = $this.find('.' + itemClass),
       $arrow = $this.find('.' + arrowClass),
+      curDot = $(".cascade-slider_dot"),
       itemCount = $item.length;
 
     var defaultIndex = 0;
@@ -12,8 +13,11 @@
     changeIndex(defaultIndex);
 
     $arrow.on('click', function() {
+      // var index = $(this).index();
       var action = $(this).data('action'),
-        nowIndex = $item.index($this.find('.now'));
+        nowIndex = $item.index($this.find('.now')),
+        currentDotIndex = nowIndex;
+        // console.log(currentDotIndex);
 
       if(action == 'next') {
         if(nowIndex == itemCount - 1) {
@@ -21,22 +25,24 @@
         } else {
           changeIndex(nowIndex + 1);
         }
-      } else if (action == 'prev') {
+
+      } 
+      else if (action == 'prev') {
         if(nowIndex == 0) {
           changeIndex(itemCount - 1);
         } else {
           changeIndex(nowIndex - 1);
         }
       }
-
-      $('.cascade-slider_dot').removeClass('cur');
-      //$('.cascade-slider_dot').next().addClass('cur');
     });
     
     // add data attributes
     for (var i = 0; i < itemCount; i++) {
       $('.cascade-slider_item').each(function(i) {
         $(this).attr('data-slide-number', [i]);
+      });
+      curDot.each(function(i) {
+        $(this).attr('data-current-dot', [i]);
       });
     }
     
@@ -78,6 +84,8 @@
       $item.each(function(index) {
         if(index == nowIndex) {
           $item.eq(index).addClass('now');
+          curDot.removeClass('cur');
+          curDot.eq(index).addClass('cur');
         }
         if(index == nowIndex + 1 ) {
           $item.eq(index).addClass('next');
@@ -88,4 +96,5 @@
       });
     }
   };
+
 })(jQuery);

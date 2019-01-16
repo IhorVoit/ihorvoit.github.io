@@ -4,12 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Карточка товара</title> 
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+		<!-- preloader start -->
+
+	<div class="loader__area">
+		<div class="loader"></div>
+	</div>
+
+	<!-- preloader   end -->
 		<!-- HEADER START -->
-	<header>
+<header>
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-auto col-sm-6 logo"><img src="img/logo.png" alt=""></div>
@@ -39,29 +47,33 @@
 					<li class="nav-item">
 						<a class="flex-md-fill text-center nav-link dropdown-toggle" href="#">Каталог</a>
 					</li>
+
 					<li class="nav-item dropdown">
-						<a class="flex-md-fill text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Наши проекты</a>
+						<a class="flex-md-fill text-center nav-link dropdown-toggle" href="#">Наши проекты</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="#">Фильмы</a>
 							<a class="dropdown-item" href="#">Полиграфия</a>
 							<a class="dropdown-item" href="#">Имиджевая продукция</a>
 						</div>
 					</li>
+
 					<li class="nav-item dropdown">
-						<a class="capro flex-sm-fill text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">О CAPro</a>
+						<a class="capro flex-sm-fill text-center nav-link dropdown-toggle" href="#">О CAPro</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="#">История компании</a>
 						</div>
 					</li>
+
 					<li class="nav-item dropdown">
-						<a class="flex-sm-fill text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Сотрудничество</a>
+						<a class="flex-sm-fill text-center nav-link dropdown-toggle" href="#">Сотрудничество</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="#">Хотите заказать проект?</a>
 							<a class="dropdown-item" href="#">Коммерческое предложение</a>
 						</div>
 					</li>
+
 					<li class="nav-item dropdown">
-						<a class="flex-sm-fill text-center nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">Контакты</a>
+						<a class="flex-sm-fill text-center nav-link dropdown-toggle" href="#">Контакты</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="#">Связаться с нами</a>
 							<a class="dropdown-item" href="#">Идеи и предложения</a>
@@ -94,32 +106,32 @@
 	<div class="catalog__item">
 		<div class="container">
 			<div class="row no-gutters">
-				<div class="col-lg-3 d-none d-lg-flex flex-column align-items-center justify-content-between">
+				<div class="col-lg-3 d-none d-lg-flex flex-column align-items-center justify-content-between wow slideInUp" data-wow-delay="1s" data-wow-duration="2s">
 					<span class="icon-up-open-mini"></span>
 					<div class="catalog__item--mini"></div>
 					<div class="catalog__item--mini"></div>
 					<div class="catalog__item--mini"></div>
 					<span class="icon-down-open-mini"></span>
 				</div>
-				<div class="col-lg-9 catalog__item__card">
+				<div class="col-lg-9 catalog__item__card wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
 					<div class="row align-items-center justify-content-center">
 						<div class="col-xl-6 col-md-5 img new"><img src="img/popular_img4.jpg"></div>
 						<div class="col-xl-6 col-md-7 description">
-							<span class="articul">Артикул: 321455</span>
-							<h1>Казахстан, Алматы крупнейший мегаполис</h1>
-							<span class="size">Размер 30х300 см</span>
-							<span class="icon-heart">В наличии</span>
-							<form action="/">
+							<span class="articul wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">Артикул: 321455</span>
+							<h1 class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">Казахстан, Алматы крупнейший мегаполис</h1>
+							<span class="size wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">Размер 30х300 см</span>
+							<span class="icon-heart wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">В наличии</span>
+							<form action="/" class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">
 								<label for="count">Выберите количество</label>
-								<a href="#" class="btn_minus">-</a>
-								<input type="text" id="count" placeholder="2">
-								<a href="#" class="btn_plus">+</a>
+								<a href="" class="btn_minus" onclick="javascript:process(-1)">-</a>
+								<input type="text" id="count" placeholder="2" value="2">
+								<a href="" class="btn_plus"  onclick="javascript:process(1)">+</a>
 							</form>
-							<del>12820 Т</del>
-							<span class="new__price">12 820 Т</span>
-							<a href="" class="btn__buy">купить в 1 клик</a>
-							<a href="" class="to__cart">добавить в корзину</a>
-							<p>40 руб. вернём на бонусный счет при покупке данного товара</p>
+							<del class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">12820 Т</del>
+							<span class="new__price wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">12 820 Т</span>
+							<a href="" class="btn__buy wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">купить в 1 клик</a>
+							<a href="" class="to__cart wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">добавить в корзину</a>
+							<p class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">40 руб. вернём на бонусный счет при покупке данного товара</p>
 						</div>
 					</div>
 				</div>
@@ -131,7 +143,7 @@
 
 	<!-- DESCRIPTION AND REVIEWS START-->
 
-	<div class="container desc__border__box">
+	<div class="container desc__border__box wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
 		<div class="row review__tabs text-center">
 			<div class="col-6 review__tabs__item">Описание</div>
 			<div class="col-6 review__tabs__item">Отзывы</div>
@@ -165,7 +177,7 @@
 		<hr class="bottom__line">
 
 		<!-- reviews start -->
-		<div class="row review__item">
+		<div class="row review__item wow fadeInUp" data-wow-duration="2s">
 			<div class="col-lg-2 col-md-3"><img src="img/user.png"></div>
 			<div class="col-lg-10 col-md-9 review__item--desc">
 				<div class="d-flex justify-content-between">
@@ -189,7 +201,7 @@
 				</div>
 				<hr class="bottom__line">
 			
-				<div class="row">
+				<div class="row wow fadeInUp" data-wow-duration="2s">
 						<div class="col-md-2"><div class=" review__item--photo">P</div></div>
 						<div class="col-md-10 review__item--desc">
 							<div class="d-flex justify-content-between">
@@ -206,7 +218,7 @@
 						</div>
 				</div>
 				<hr class="bottom__line">
-				<div class="row">
+				<div class="row wow fadeInUp" data-wow-duration="2s">
 					<div class="col-md-11 offset-md-1 row">
 						<div class="col-md-2"><div class=" review__item--photo admin">A</div></div>
 						<div class="col-md-10 review__item--desc">
@@ -234,7 +246,7 @@
 <div class="row justify-content-center popular">
 	<h2 class="col-auto">Комментировать</h2>
 </div>
-<div class="row justify-content-center add__comment__form">
+<div class="row justify-content-center add__comment__form wow fadeInUp" data-wow-offset="200">
 	<form action="/" class="col-12 row">
 		<div class="col-md-6 d-flex flex-column">
 			<label for="username">Ваше имя:</label><input type="text" id="username">
@@ -255,7 +267,7 @@
 	<!-- DESCRIPTION AND REVIEWS END -->
 	
 	<!-- FOOTER START -->
-	<footer>
+	<footer class="wow fadeInUp">
 		<div class="container">
 			<div class="row no-gutters justify-content-between align-items-center">
 				<div class="col-lg-3 col-md-6 logo">
@@ -292,6 +304,7 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/cascade-slider.js"></script>
 	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
