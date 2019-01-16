@@ -75,7 +75,7 @@ $('.btn_minus, .btn_plus').on('click', function(e) {
   new WOW().init();
 
 $('.nav .nav-item.dropdown').on('click', function(event) {
-  event.preventDefault();
+  // event.preventDefault();
   $(this).toggleClass('active');
   $(this).find('.dropdown-menu').slideToggle(500);
   $(this).siblings().removeClass('active');
