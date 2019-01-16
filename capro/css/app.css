@@ -11645,10 +11645,6 @@ nav.main__menu {
   text-transform: none
 }
 
-.nav .nav-item:first-child .dropdown-toggle:after {
-  visibility: hidden
-}
-
 .slider {
   height: 390px
 }
