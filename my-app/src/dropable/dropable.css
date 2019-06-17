@@ -1,0 +1,8 @@
+.Dropable-container {
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background: #ccc;
+}
