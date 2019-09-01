@@ -1106,7 +1106,7 @@ h2 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .contact-info .my-photo {
@@ -1165,7 +1165,7 @@ h2 {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 33%;
+    width: 50%;
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
